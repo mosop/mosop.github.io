@@ -1,0 +1,17 @@
+{
+  "name": "mosop.github.io",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "",
+  "license": "UNLICENSED",
+  "description": "",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.3",
+    "npm-run-all": "^2.3.0",
+    "stylus": "^0.54.5"
+  },
+  "scripts": {
+    "watch": "npm-run-all -p watch:*",
+    "watch:stylus": "stylus -w src -o lib"
+  }
+}

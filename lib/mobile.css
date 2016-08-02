@@ -1,0 +1,17 @@
+@media (max-width: 640px) {
+  div.section div {
+    width: 100%;
+  }
+  div.section div.image {
+    height: 500px;
+  }
+  div.section.sirius {
+    flex-direction: column;
+  }
+  div.section.town {
+    flex-direction: column;
+  }
+  div.section.sea {
+    flex-direction: column;
+  }
+}

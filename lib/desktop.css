@@ -1,0 +1,17 @@
+@media (min-width: 641px) {
+  div.section div {
+    width: 50%;
+  }
+  div.section div.image {
+    height: 400px;
+  }
+  div.section.sirius {
+    flex-direction: row;
+  }
+  div.section.town {
+    flex-direction: row-reverse;
+  }
+  div.section.sea {
+    flex-direction: row;
+  }
+}
