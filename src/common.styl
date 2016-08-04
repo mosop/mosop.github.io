@@ -24,6 +24,21 @@ a
   color: darken(yellowgreen, 20%)
   text-decoration: none
 
+div.top
+  div
+    background-attachment: fixed
+div.section
+  div.image::after
+    background-attachment: fixed
+
+body.ios
+  div.top
+    div
+      background-attachment: local
+  div.section
+    div.image::after
+      background-attachment: local
+
 div.section
   display: flex
   justify-content: center
@@ -47,7 +62,6 @@ div.section
   div.image::after
     content: ""
     background-repeat: no-repeat
-    background-attachment: fixed
     background-size: cover
     left: 0
     top: 0
@@ -59,28 +73,31 @@ div.section
     z-index: -1
   &.sirius
     div.image::after
-      background-image: url("../img/sirius.jpg")
-      background-position: -25vw center
+      background-image: url("./img/sirius.jpg")
+      background-position: center center
   &.town
     div.image::after
-      background-image: url("../img/town.jpg")
+      background-image: url("./img/town.jpg")
       background-position: center center
   &.sea
     div.image::after
-      background-image: url("../img/sea.jpg")
+      background-image: url("./img/sea.jpg")
       background-position: center center
 
 div.top
-  display: table
+  display: flex
   width: 100%
   height: 100vh
   div
-    display: table-cell
-    vertical-align: middle
+    width: 100%
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
     text-align: center
-    background-image: url("../img/house.jpg")
+    background-image: url("./img/house.jpg")
     background-repeat: no-repeat
-    background-attachment: fixed
     background-position: center center
     background-size: cover
     color: rgba(white, 0.7)
