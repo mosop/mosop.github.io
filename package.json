@@ -22,7 +22,7 @@
     "webpack": "^1.13.1"
   },
   "scripts": {
-    "build": "npm-run-all build:*",
+    "build": "npm-run-all build:stylus build:webpack",
     "build:webpack": "webpack",
     "build:stylus": "stylus src -o lib",
     "watch": "npm-run-all -p watch:*",
