@@ -84,6 +84,80 @@ div.section
       background-image: url("./img/sea.jpg")
       background-position: center center
 
+// div.section2
+//   display: flex
+//   justify-content: center
+//   width: 100%
+//   div
+//     display: flex
+//     position: relative
+//     justify-content: center
+//     text-align: center
+//     flex-direction: column
+//     width: 100%
+//   div.text
+//     margin: pad*2 0
+//   div.form
+//     align-items: center
+//     div
+//       width: 90%
+//   div.image
+//     div.code
+//       display: flex
+//       justify-content: center
+//       align-items: center
+//       // background-color: black
+//       pre
+//         margin: 0
+//         padding: 1em
+//         text-shadow: 1px 1px 3px rgba(black, 0.9)
+//         font-size: fontsize * 1.2
+//         font-family: 'Source Code Pro', monospace
+//         font-style: italic
+//         color: white
+//         code-kw
+//           color: purple
+//         code-op
+//           color: yellow
+//         code-paren
+//           color: blue
+//         code-const
+//           color: orange
+//         code-call
+//           color: green
+//     div.icon
+//       img
+//         margin: 1em
+//         width: auto
+//         max-height: 150px
+//     h2
+//       color: rgba(white, 0.7)
+//       text-shadow: 1px 1px 3px rgba(black, 0.9)
+//   div.image::after
+//     content: ""
+//     background-repeat: no-repeat
+//     background-size: cover
+//     left: 0
+//     top: 0
+//     right: 0
+//     bottom: 0
+//     width: 100%
+//     height: 100%
+//     position: absolute
+//     z-index: -1
+//   &.sirius
+//     div.image::after
+//       background-image: url("./img/sirius.jpg")
+//       background-position: center center
+//   &.town
+//     div.image::after
+//       background-image: url("./img/town.jpg")
+//       background-position: center center
+//   &.sea
+//     div.image::after
+//       background-image: url("./img/sea.jpg")
+//       background-position: center center
+
 div.top
   display: flex
   width: 100%
@@ -124,13 +198,67 @@ div.niconico
     iframe
       margin: 5px
 
+div.github
+  margin: 1em 0
+  padding: 1em 0
+  display: flex
+  justify-content: center
+  flex-direction: row
+  width: 100%
+  background-color: black
+  div.code
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 70vw
+    pre
+      margin: 0
+      padding: 0
+      font-family: 'Source Code Pro', monospace
+      font-style: italic
+      text-shadow: 1px 1px 3px rgba(black, 0.9)
+      font-size: 2vw * 1.2
+      color: white
+      code-kw
+        color: purple
+      code-op
+        color: yellow
+      code-paren
+        color: blue
+      code-const
+        color: orange
+      code-call
+        color: green
+  div.icon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 20vw
+    img
+      width: 16vw
+      height: auto
+
+div.form
+  margin: 3em 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 100%
+  color: lighten(black, 40%)
+  p
+    margin: 0
+    text-align: center
+
 div.footer
-  display: table
+  margin: 1em 0
+  display: flex
+  justify-content: center
   width: 100%
   div
-    padding: pad
     text-align: center
     font-size: 80%
+    p
+      margin: 0
 
 .wow
   visibility: hidden

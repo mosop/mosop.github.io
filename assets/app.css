@@ -134,14 +134,79 @@ div.niconico div {
 div.niconico div iframe {
   margin: 5px;
 }
+div.github {
+  margin: 1em 0;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  background-color: #000;
+}
+div.github div.code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+}
+div.github div.code pre {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Code Pro', monospace;
+  font-style: italic;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+  font-size: 2.4vw;
+  color: #fff;
+}
+div.github div.code pre code-kw {
+  color: #800080;
+}
+div.github div.code pre code-op {
+  color: #ff0;
+}
+div.github div.code pre code-paren {
+  color: #00f;
+}
+div.github div.code pre code-const {
+  color: #ffa500;
+}
+div.github div.code pre code-call {
+  color: #008000;
+}
+div.github div.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+}
+div.github div.icon img {
+  width: 16vw;
+  height: auto;
+}
+div.form {
+  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  color: #666;
+}
+div.form p {
+  margin: 0;
+  text-align: center;
+}
 div.footer {
-  display: table;
+  margin: 1em 0;
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 div.footer div {
-  padding: 3vw;
   text-align: center;
   font-size: 80%;
+}
+div.footer div p {
+  margin: 0;
 }
 .wow {
   visibility: hidden;
