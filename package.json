@@ -27,6 +27,7 @@
     "build:stylus": "stylus src -o lib",
     "watch": "npm-run-all -p watch:*",
     "watch:webpack": "webpack -w",
-    "watch:stylus": "stylus -w src -o lib"
+    "watch:stylus": "stylus -w src -o lib",
+    "serve": "python -m SimpleHTTPServer"
   }
 }

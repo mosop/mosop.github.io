@@ -1,6 +1,6 @@
-require('animate.css');
+// require('animate.css');
 require.context('.', false, /\.styl$/);
-require('script!wow');
+// require('script!wow');
 require('script!mobile-detect');
 
 document.addEventListener("DOMContentLoaded", function(event) {

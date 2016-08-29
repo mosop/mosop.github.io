@@ -4,16 +4,16 @@ table {
   font-family: 'Raleway', sans-serif;
   margin: 0 !important;
   padding: 0 !important;
-  font-size: 16px;
+  font-size: 4.5vw;
   background-color: transparent;
 }
 h1 {
-  font-size: 32px;
+  font-size: 9vw;
   margin: 0;
   padding: 0;
 }
 h2 {
-  font-size: 24px;
+  font-size: 6.75vw;
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -21,68 +21,6 @@ h2 {
 a {
   color: #7ba428;
   text-decoration: none;
-}
-div.top div {
-  background-attachment: fixed;
-}
-div.section div.image::after {
-  background-attachment: fixed;
-}
-body.ios div.top div {
-  background-attachment: local;
-}
-body.ios div.section div.image::after {
-  background-attachment: local;
-}
-div.section {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-div.section div {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-}
-div.section div.text {
-  margin: 6vw 0;
-}
-div.section div.form {
-  align-items: center;
-}
-div.section div.form div {
-  width: 90%;
-}
-div.section div.image h2 {
-  color: rgba(255,255,255,0.7);
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
-}
-div.section div.image::after {
-  content: "";
-  background-repeat: no-repeat;
-  background-size: cover;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
-}
-div.section.sirius div.image::after {
-  background-image: url("./img/sirius.jpg");
-  background-position: center center;
-}
-div.section.town div.image::after {
-  background-image: url("./img/town.jpg");
-  background-position: center center;
-}
-div.section.sea div.image::after {
-  background-image: url("./img/sea.jpg");
-  background-position: center center;
 }
 div.top {
   display: flex;
@@ -101,7 +39,11 @@ div.top div {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
   color: rgba(255,255,255,0.7);
+}
+body.ios div.top div {
+  background-attachment: local;
 }
 div.twitter {
   display: flex;
@@ -150,7 +92,6 @@ div.github div.code pre {
   font-style: italic;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
   font-size: 2.5vw;
-  letter-spacing: 0.1vw;
   color: #fff;
 }
 div.github div.code pre code-kw {
@@ -183,12 +124,19 @@ div.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   color: #666;
 }
-div.form p {
+div.form > p {
   margin: 0;
   text-align: center;
+}
+div.form > div {
+  width: 90%;
+}
+div.form > div iframe {
+  border-image-width: 0;
 }
 div.footer {
   margin: 1em 0;
@@ -202,7 +150,4 @@ div.footer div {
 }
 div.footer div p {
   margin: 0;
-}
-.wow {
-  visibility: hidden;
 }
