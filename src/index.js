@@ -1,7 +1,5 @@
-// require('animate.css');
-require.context('.', false, /\.styl$/);
-// require('script!wow');
-require('script!mobile-detect');
+import { MobileDetext } from 'mobile-detect';
+import './main.styl';
 
 document.addEventListener("DOMContentLoaded", function(event) {
   const md = new MobileDetect(window.navigator.userAgent);
